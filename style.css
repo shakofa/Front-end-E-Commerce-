@@ -15,3 +15,34 @@ header{
     font-family:'Times New Roman', Times, serif;
    
 }   
+.btn{
+
+    float: right;
+    padding-left: 1em;
+    display: inline-block;
+
+}
+.btn1 {
+    float: right;
+    padding-left: 1em;
+    display: inline-block;
+}
+
+.d-flex {
+    float: right;
+}
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color:rgb(231, 185, 225);
+}
+.col {
+    height: 100%;
+}
+.btn2 {
+    text-align: center;
+}
