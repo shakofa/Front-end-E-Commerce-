@@ -1,17 +1,18 @@
 header{
     position: relative;
     width: 100%;
-    height: 160px;
+    height: 140px;
     background-attachment: fixed;
     background: url("../images/q.jpg");
+    background-color: aquamarine;
  
 }
 .nl{
-    color:rgb(39, 86, 214);
-    text-align:left;
-    padding-top: 40px;
+    color:rgb(40, 86, 215);
+    text-align:center;
+    padding-top: 15px;
     padding-left: 30px;
-    font-size: 80px;
+    font-size: 70px;
     font-family:'Times New Roman', Times, serif;
    
 }   
@@ -20,6 +21,7 @@ header{
     float: right;
     padding-left: 1em;
     display: inline-block;
+    
 
 }
 .btn1 {
@@ -37,7 +39,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-color:rgb(231, 185, 225);
 }
 .col {
@@ -45,4 +47,10 @@ footer {
 }
 .btn2 {
     text-align: center;
+}
+
+.p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-right: 60px;
 }
