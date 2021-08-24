@@ -54,3 +54,19 @@ footer {
     font-size: 25px;
     padding-right: 5px;
 }
+
+.col-md-auto {
+    text-align: center;
+    
+}
+
+.btn3 {
+    align-items: center;
+    box-shadow: solid black 1px 1px;
+
+}
+.col-md-6{
+    
+    position: relative;
+    padding-top:250px;
+}
