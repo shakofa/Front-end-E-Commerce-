@@ -9,7 +9,7 @@ header{
 }
 .nl{
     color:rgb(116, 94, 109);
-    text-align:center;
+    text-align:left;
     padding-top: 15px;
     padding-left: 30px;
     font-size: 70px;
@@ -22,6 +22,8 @@ header{
     float: right;
     padding-left: 1em;
     /* display: inline-block; */
+    margin-top: 35px;
+    margin-right: 35px;
     
 
 }
@@ -53,8 +55,9 @@ footer {
 .p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-right: 5px;
-    padding-left: 5px;
+    /* padding-right: 5px;
+    padding-left: 5px; */
+    text-align: left;
 }
 
 .col-md-auto {
@@ -121,6 +124,7 @@ a{
   body {
       width: 100%;
       min-height: 100vh;
+      
   }
 /* 
   @media screen and (min-device-width: 700px){
