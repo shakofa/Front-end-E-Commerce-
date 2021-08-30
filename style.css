@@ -113,8 +113,8 @@ a{
 .container {
     left: 1%;
     right: 1%;
-    transform: translate(0, -50%);
-    flex-direction: column;
+    transform: translate(0, -50%); 
+     flex-direction: column;
     width: 100%;
     display: inline-block;
     position: absolute;
