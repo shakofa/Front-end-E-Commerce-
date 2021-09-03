@@ -7,6 +7,12 @@ header{
     background-color: rgb(227, 217, 231);
  
 }
+
+.head{
+    height: 15%;
+    background-color:rgb(227, 217, 231);
+    color: rgb(227, 217, 231);
+}
 .nl{
     color:rgb(116, 94, 109);
     text-align:left;
@@ -129,6 +135,10 @@ a{
     /* margin-bottom: 50px; */
 } 
 
+.card-img-top{
+    height: 250px;
+
+}
 /* .container { */
     /* left: 1%;
     right: 1%; */
