@@ -41,6 +41,9 @@ header{
     /* display: inline-block; */
 }
 
+.input-group{
+    float: right;
+}
 .d-flex {
     float: right;
 }
@@ -126,28 +129,29 @@ a{
     /* margin-bottom: 50px; */
 } 
 
-/* .container {
+/* .container { */
     /* left: 1%;
     right: 1%; */
-    /* transform: translate(0, -50%); 
-     flex-direction: column;
-    width: 100px; */
+    /* transform: translate(0, -50%);   */
+     /* flex-direction: column; */
+    /* width: 100px; */
     /* display: inline-block; */
     /* position: absolute; */
     /* background-size: contain; */
     
-  /* } */ 
-  /* .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-} */
+  
+ .container {
+    text-align: center;
+    
+}
 
   body {
       width: 100%;
-      min-height: 100vh;
-     
-      
+      min-height: 100vh;   
   }
+
+  
+
 /* 
   @media screen and (min-device-width: 700px){
         .container{
