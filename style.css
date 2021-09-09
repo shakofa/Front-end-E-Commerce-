@@ -8,13 +8,17 @@ header{
  
 }
 .A{
-    background-color: rgb(20, 15, 49);
+    background-color: rgb(102, 85, 197);
     width: 100%;
     height: 80px;
+  
 }
 .navbar{
     color: white;
+    top: 30;
+    
 }
+
 
 .container3{
     text-align: center;
@@ -35,15 +39,6 @@ header{
     font-size: 70px;
     font-family:'Times New Roman', Times, serif; 
 }
-
-
-
- 
-ul li {
-    margin-left: auto;
-    margin-right: auto;
-    color:#899599;
-} 
 
 
 
@@ -278,4 +273,4 @@ a{
     background-color: silver;
     border: #ccc 1px solid;
     margin-right: 5px;
-  } */ */
+  } */ 
