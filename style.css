@@ -16,10 +16,16 @@ header{
 .navbar{
     color: white;
     top: 30;
+    z-index:5;
     
 }
-
-
+ul {
+  margin:auto;
+}
+.navbar-nav {
+  position: absolute;
+  left:150px;
+}
 .container3{
     text-align: center;
     padding-left: 12%;
@@ -27,16 +33,16 @@ header{
 
 }
 .head{
-    height: 15%;
+    height: 12%;
     background-color:rgb(227, 217, 231);
     color: rgb(227, 217, 231);
 }
 .nl{
     color:rgb(116, 94, 109);
     text-align:left;
-    padding-top: 15px;
-    padding-left: 30px;
-    font-size: 70px;
+    padding-top: 25px;
+    padding-left: 160px;
+    font-size: 50px;
     font-family:'Times New Roman', Times, serif; 
 }
 
@@ -51,13 +57,21 @@ header{
     font-family:'Times New Roman', Times, serif; 
 }
 
+.h{
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+}
 .btn{
 
     float: right;
-    padding-left: 1em;
+    /* padding-left: 1em; */
     /* display: inline-block; */
-    margin-top: 35px;
-    margin-right: 35px;
+    /* margin-top: 35px;
+    margin-right: 120px; */
+    /* padding-top: 25px;
+    padding-right: 160px; */
+   
     
 
 }
@@ -71,7 +85,9 @@ header{
     float: right;
 }
 .d-flex {
-    float: right;
+    left:800px;
+    position: absolute;
+
 }
 footer {
     /* position: absolute; */
@@ -171,7 +187,8 @@ a{
     
   
  .container {
-    text-align: center;
+    
+    margin: auto;
     
 }
 
