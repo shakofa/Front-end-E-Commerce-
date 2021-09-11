@@ -75,6 +75,18 @@ ul {
     
 
 }
+.btn8{
+  border-radius: 10px;
+  background-color: yellow;
+  color: black;
+  border-bottom: 1px solid black;
+  box-shadow: purple ;
+  margin: 0;
+
+}
+.btn-holder{
+  text-align: center;
+}
 .btn1 {
     float: right;
     /* padding-left: 1em; */

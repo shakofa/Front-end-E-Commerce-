@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="style.css">
+    
     <title>N & L</title>
 </head>
 <body>
@@ -73,7 +74,7 @@
     </header>
 
     <!--main-->
-    <main class="container container-fluid">
+    <main class="container0 container-fluid">
         <div class="row">
             <div class="col-md -6">
                 <br>
@@ -116,17 +117,23 @@
                                     <td>$99.99</td>
                                   </tr>
                                   <tr>
+                                    <td colspan="2">Tax</td>
+                                    <td>$8.99</td>
+                                  </tr>
+                                  <tr>
                                     <td colspan="2">Shipping</td>
                                     <td>$15.00</td>
                                   </tr>
                                   <tr>
                                     <td colspan="2">Total</td>
-                                    <td>$120</td>
+                                    <td>$123.00</td>
                                   </tr>
                                 </tbody>
                               </table>
 
-                              <a href="#" class="btn8 btn-danger">Checkout</a>
+                              <div class="btn-holder">
+                              <a href="form.html" class="btn8 btn-lg">Checkout</a>
+                              </div>
                             </div>
                           </div> 
                         </div>
@@ -137,12 +144,39 @@
                   <br>
                   <hr>
 
-                  <div class="row">
-
-                  </div>
+                  
             </div>
         </div>
     </main>
 
+
+    <!--chechout section-->
+    <!-- <div class="row">
+      <div class="col-md -6">
+        <form action="action_page.php" method="post">
+          <div class="imgcontainer">
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+        
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </div> -->
 </body>
 </html>
