@@ -8,6 +8,8 @@ if (document.readyState == 'loading') {
 }
 
 
+
+
 //the page is already loaded when the code reach to this point//
 //add this function here is for hooking up the buttons.//
 function ready() {
@@ -28,15 +30,40 @@ function ready() {
     var addToCartButton = document.getElementsByClassName("shop-item-button")
     for( var i = 0; i < addToCartButton.length; i++) {
         var button = addToCartButton[i];
-        button.addEventListener("click", addToCartClicked);
+        button.addEventListener("click", addToCartClicked, cardNumbers);
+        ////////////
+        
+
     }
 
     //purchase button//
     document.getElementsByClassName("btn-purchase")[0].addEventListener("click", purchaseClicked);
 }
+/////////////////////////
+function cardNumbers() {
+    var prodctNumbers =localStorage.getItem("cardNumbers");
+
+    prodctNumbers = parseInt(prodctNumbers);
+    if(prodctNumbers){
+        window.localStorage.setItem("cardNumbers", prodctNumbers + 1);
+        document.querySelector(".cart span").textContent = prodctNumbers +1;
+    }else{
+        window.localStorage.setItem("cardNumbers", 1);
+        document.querySelector(".cart span").textContent = 1;
+    }
+    
+}
 
 function purchaseClicked() {
     alert("Thank you for you purchase");
+    ///////////
+    var prodctNumbers =localStorage.getItem("cardNumbers");
+
+    prodctNumbers = parseInt(prodctNumbers);
+    if(purchaseClicked){
+        window.localStorage.setItem("cardNumbers", prodctNumbers = 0);
+        document.querySelector(".cart span").textContent = prodctNumbers = 0;
+    }
 
     //this part remove all rows and its items from cart when the purchace btn clicked.//
     var cartItems = document.getElementsByClassName("cart-items")[0]
@@ -48,7 +75,19 @@ function purchaseClicked() {
 
 function removeCartItem(event) {
     var buttonClicked = event.target
-            buttonClicked.parentElement.parentElement.remove()
+            buttonClicked.parentElement.parentElement.remove();
+            
+            //this part set the card number to 0 when the purchase btn clicked//
+            var prodctNumbers =localStorage.getItem("cardNumbers");
+
+    prodctNumbers = parseInt(prodctNumbers);
+            if(removeCartItem){
+                window.localStorage.setItem("cardNumbers", prodctNumbers - 1);
+                document.querySelector(".cart span").textContent = prodctNumbers -1;
+            }else{
+                window.localStorage.setItem("cardNumbers", 0);
+                document.querySelector(".cart span").textContent = 0; 
+            }
             updateCartTotall();
 }
 
@@ -70,6 +109,8 @@ function addToCartClicked(event){
     console.log(title, price, imageSrc);
     addItemToCart(title, price, imageSrc);
     updateCartTotall();
+    cardNumbers();
+    
 }
 
 function addItemToCart(title, price, imageSrc) {
