@@ -8,10 +8,9 @@ if (document.readyState == 'loading') {
 }
 
 
-
-
 //the page is already loaded when the code reach to this point//
 //add this function here is for hooking up the buttons.//
+
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName("btn-danger")
     console.log(removeCartItemButtons);
@@ -31,15 +30,14 @@ function ready() {
     for( var i = 0; i < addToCartButton.length; i++) {
         var button = addToCartButton[i];
         button.addEventListener("click", addToCartClicked, cardNumbers);
-        ////////////
-        
-
     }
 
     //purchase button//
     document.getElementsByClassName("btn-purchase")[0].addEventListener("click", purchaseClicked);
 }
-/////////////////////////
+
+
+
 function cardNumbers() {
     var prodctNumbers =localStorage.getItem("cardNumbers");
 
@@ -54,9 +52,11 @@ function cardNumbers() {
     
 }
 
+
+
 function purchaseClicked() {
     alert("Thank you for you purchase");
-    ///////////
+    
     var prodctNumbers =localStorage.getItem("cardNumbers");
 
     prodctNumbers = parseInt(prodctNumbers);
@@ -73,11 +73,14 @@ function purchaseClicked() {
     updateCartTotall();
 }
 
+
+
+
 function removeCartItem(event) {
     var buttonClicked = event.target
             buttonClicked.parentElement.parentElement.remove();
-            
-            //this part set the card number to 0 when the purchase btn clicked//
+
+            //this part set the card number to -1 when the remove btn clicked//
             var prodctNumbers =localStorage.getItem("cardNumbers");
 
     prodctNumbers = parseInt(prodctNumbers);
@@ -90,6 +93,7 @@ function removeCartItem(event) {
             }
             updateCartTotall();
 }
+
 
 function quantityChanged(event) {
     var input = event.target

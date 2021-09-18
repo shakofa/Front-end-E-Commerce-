@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
     <title>N&L</title>
 </head>
 <body>
+  <h2>hi</h2>
     <!--chechout section-->
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md -6">
           <form action="action_page.php" method="post">
             <div class="imgcontainer">
-              <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
-            </div>
+              <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+            <!-- </div>
           
             <div class="container">
               <label for="uname"><b>Username</b></label>
@@ -36,17 +37,51 @@
             </div>
           </form>
         </div>
+      </div> --> 
+      <button data-modal-target="#modal">open modal</button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Please Login</div>
+        <button data-close-button  class="close-button">&times;</button>
       </div>
+      <div class="modal-body">
+        <!-- <form action="action_page.php" method="post">
+          <div class="imgcontainer">
+            <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+          <!-- </div>
+        
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>  -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum id quaerat, perspiciatis repellendus voluptas aliquam expedita non ipsum necessitatibus sint esse ex officiis iure voluptate odio vero ratione aliquid. Reiciaesentium ea tenetur sint voluptates voluptate seqs vel, praesentium dolorum ducimus iure, deleniti corrupti quam quidem sequi porro iusto iste beatae dignissimos et error culpa non suscipit facere, nisi aut sapiente cumque tempore? Ea culpa earum tenetu</p>
+      </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>
 
 
-
-      <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
   Launch demo modal
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -61,75 +96,8 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div>      <!-- Button trigger modal -->
+<!-- 
   </div>
-</div>
-///////////////////////////////////////////////////
-      <div class="workday-popup-centeringRoot workday-popup-fullGlass" data-automation-id="wd-popup-glass">
-        <div class="workday-popup-centeringForm">
-          <div class="workday-popup-centeringCell">
-            <div class="workday-popup wd-popup" data-automation-id="wd-popup-frame" data-uxi-widget-type="popup" tabindex="-1" role="dialog" aria-label="Start Your Application" data-automation-activepopup="true" style="padding: 40px 0px 0px; background-color: rgb(255, 255, 255); color: rgb(51, 61, 71); z-index: 50; transform: scale(1); opacity: 1;">
-              <div class="workday-popup-attachment workday-popup-close-container" style="right: 0px; top: 0px; width: 40px; height: 40px;">
-                <button title="Close" class="workday-popup-close-button" data-automation-id="closeButton" aria-label="Close" data-uxi-element-uniqueid="false" data-uxi-element-id="popupClose" style="height: 30px; width: 30px;">
-                  <svg width="24" height="24" class="workday-icon-x workday-icon" focusable="false" role="presentation" viewbox="0 0 24 24" data-automation-id="popupCloseIcon" style="height: 24px; width: 24px;">
-                    <g fill-rule="evenodd" class="workday-icon-container">
-                      <path class="workday-icon-fill" d="M5.996 4.582a.5.5 0 0 0-.717-.003l-.7.7a.504.504 0 0 0 .003.717L10.586 12l-6.004 6.004a.5.5 0 0 0-.003.717l.7.7c.197.197.514.2.717-.003L12 13.414l6.004 6.004a.5.5 0 0 0 .717.003l.7-.7a.504.504 0 0 0-.003-.717L13.414 12l6.004-6.004a.5.5 0 0 0 .003-.717l-.7-.7a.504.504 0 0 0-.717.003L12 10.586 5.996 4.582z">
-
-                      </path>
-                    </g>
-                  </svg>
-                </button>
-              </div>
-              <div class="workday-popup-content wd-popup-content" data-automation-id="wd-popup-content" style="max-width: 414px; max-height: 696px;">
-                <div>
-                  <div class="css-yin8xu">
-                    <div class="css-gyk776" style="">
-                      <div class="css-178yklu"></div>
-                      <div class="css-1vrc4df">
-                        <div class="css-1s1r74k">
-                          <div class="css-1s1r74k" style="background-color:red">
-                            9
-                          </div>
-                        </div>
-                      </div>
-                      <div class="css-1yuhvjn"></div>
-                      <div class="css-1vrc4df"><div class="css-1s1r74k">
-                        <div class="css-1s1r74k" style="background-color:rgb(179, 128, 128)">
-                          7
-                        </div>
-                      </div>
-                    </div>
-                    <div class="css-7hh00w"></div>
-                    <div class="css-1vrc4df">
-                      <div class="css-1s1r74k">
-                        <div class="css-1s1r74k">
-                          5
-                        </div>
-                      </div>
-                    </div>
-                    <div class="css-7hh00w"></div>
-                    <div class="css-1vrc4df">
-                      <div class="css-1s1r74k"><div class="css-1s1r74k">
-                      5
-                    </div>
-                  </div>
-                  <div class="css-1yjvs5a"></div>
-                </div>
-              </div>
-              <div tabindex="0" aria-hidden="true"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <script type="text/javascript">
-  $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-  </script>
-</body>
-</html>
+</div>  -->
