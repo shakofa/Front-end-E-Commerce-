@@ -14,8 +14,15 @@
   background-color: white;
   width: 500px;
   max-width: 80%;
+  height: 300px;
 }
 
+.form-part{
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
   transition: 200ms ease-in-out;
@@ -32,7 +39,11 @@
 .modal-header .title {
   font-size: 1.25rem;
   font-weight: bold;
+  text-align: center;
+  padding-left: 45%;
+  
 }
+
 
 .modal-header .close-button {
   cursor: pointer;
@@ -47,17 +58,56 @@
   padding: 10px 15px;
 }
 
-#overlay.active {
+#overlay {
   position: fixed;
   opacity: 0;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 1, 1, 5);
+  
+  transition: 200ms ease-in-out;
+  background-color: rgb(102, 93, 93);
   pointer-events: none;
 }
 #overlay.active {
   opacity: 1;
   pointer-events:  all;
+}
+
+/*form part*/
+.cs {
+  align-content: center;
+  text-align: center;
+}
+
+.bt {
+  border: none;
+  background-color: none;
+  color:blue;
+  text-decoration: none;
+}
+
+.form-control {
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(219, 230, 243);
+
+}
+.b {
+  border-radius: 15px;
+  height: 35px;
+  width: 100%; max-width: 376px; min-width: 280px;
+  font-size: 20px;
+  background-color: rgb(18, 117, 211);
+  color: white;
+  border:none;
+}
+
+.col-sm-2  {
+  float: left;
+  padding-left: 50px;
+  text-decoration: bold;
+  font-size: 15px;
 }
