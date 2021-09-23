@@ -40,7 +40,7 @@ html, body {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(204, 12, 12, 0.726)
+    border-bottom: 1px solid rgba(52, 153, 43, 0.726)
 }
 
 .main-nav li {
@@ -98,7 +98,7 @@ html, body {
 }
 
 .main-footer {
-    background-color: #56CCF2;
+    background-color: #991165;
     color: white;
     padding: .25em 0;
 }
