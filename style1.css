@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
-@font-face {
+/* @font-face {
     font-family: "Booter - Zero Zero";
     src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
          url("Fonts/Booter - Zero Zero.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 * {
     box-sizing: border-box;
@@ -84,7 +84,7 @@ html, body {
 .section-header {
     font-family: "Metal Mania";
     font-weight: normal;
-    color: #333;
+    color: rgb(184, 35, 35);
     text-align: center;
     font-size: 2.5em;
 }
@@ -175,31 +175,39 @@ html, body {
     margin-bottom: 1em;
 }
 
-.tour-row:last-child {
-    border: none;
-}
-
 .tour-item {
     display: inline-block;
     padding-right: .5em;
+    margin: 10px 0;
+    margin-left: 50px;
 }
 
+.tour-item1 {
+    display: inline-block;
+    padding-right: 0pxl;
+    margin: 10px 0;
+    margin-left: 100px;
+
+
+}
+video{
+    border-radius: 20px;
+    border: none;
+}
 .tour-date {
-    color: #555;
-    width: 11%;
-    font-weight: bold;
+    width: 30%;
 }
 
-.tour-city {
+/* .tour-city {
     width: 24%;
 }
 
 .tour-arena {
     width: 42%;
-}
+} */
 
 .tour-btn {
-    max-width: 19%;
+    max-width: 25%;
 }
 
 .shop-item {
