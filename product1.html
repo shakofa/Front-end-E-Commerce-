@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
     <!-- font awsome --> 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css"> 
+    <script type="text/javascript">
+      function togglemenue() {
+        document.getElementById("sidebar").classList.toggle("active");
+      }
+     
+    </script>
     <title>N & L</title>
+
+    
 </head>
 <body>
    
-  <header class="header sticky-top">
+  <!-- <header class="header sticky-top">
     <h1 class="nl">N & L
       <button type="button" class="btn btn-sm">Sign In</button> 
       <button type="button" class="btn btn-lg"><i class="far fa-shopping-cart"></i></button> 
@@ -71,6 +79,82 @@
 
   <footer>
     this is footer
-  </footer>
+  </footer> -->
+
+  <!-- <div class="nav-right visible-xs">
+    <div class="button" id="btn">
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom"></div>
+    </div>
+  </div>
+  
+  <main>
+  
+  
+    <nav>
+      <div class="nav-right hidden-xs">
+        <div class="button" id="btn">
+          <div class="bar top"></div>
+          <div class="bar middle"></div>
+          <div class="bar bottom"></div>
+        </div>
+      </div>
+      
+    </nav>
+  
+  
+  </main>
+  
+  <div class="sidebar">
+    <ul class="sidebar-list">
+      <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 1</a></li>
+      <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 2</a></li>
+      <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 3</a></li>
+      <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 4</a></li>
+    </ul>
+  </div> -->
+
+
+
+  <!-- <script type="text/javascript">
+    $(document).ready(function() {
+
+function toggleSidebar() {
+  $(".button").toggleClass("active");
+  $("main").toggleClass("move-to-left");
+  $(".sidebar-item").toggleClass("active");
+}
+
+$(".button").on("click tap", function() {
+  toggleSidebar();
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) {
+    toggleSidebar();
+  }
+});
+
+});
+  </script> -->
+
+
+
+  <div id="sidebar" onclick="togglemenue()">
+    <div class="toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+      <div>
+      <ul>
+        <li>r</li>
+        <li>e</li>
+        <li>w</li>
+        <li>t</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>

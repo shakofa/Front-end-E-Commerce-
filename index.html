@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Generics</title>
+        <title> N&L</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="style1.css" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+        <!-- font awsome --> 
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="cart.js" ></script>
+        <script src="store.js" async></script>
     </head>
     <body>
         <header class="main-header">
-            <h1 class="band-name band-name-large">The Generics</h1>
-            <div class="container">
-                <button type="button" class="btn btn-header">Get our Latest Album</button>
-                <button type="button" class="btn btn-header">Get our Latest Album</button>
+            
+            
+            <div id="parent">
+                <h1 class="band-name band-name-large">N&L</h1>
+                <form id="form">
+                <input type="search" style="width: 200px" placeholder="Search" aria-label="Search">
+                <button class="btn9 btn-outline-success" type="submit"><i class="far fa-search"></i></button>
+                <button type="button" class="btn9 btn-sm">Sign In</button> 
+                <button type="button" class="cart">
+                <a href="#" ><i class="far fa-shopping-cart"></i><span>0</span></a>
+                </button>
+                </form>
+                
             </div>
             
-            <nav class="nav main-nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="store.html">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
-            </nav>
+            <!-- <span class="tour-item2 tour-date"> -->
+            
+              </span>
+              <span class="">
+               
+                <!-- <button type="button" class="btn btn-lg"><i class="far fa-shopping-cart"></i></button>  -->
+               
+              <!-- </span> -->
+            </row>
             
         </header>
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="about.html">CONTACT</a></li>
+            </ul>
+        </nav>
         <br>
         <section class="content-section container">
          
                 <div class="tour-row">
                     <span class="tour-item tour-date">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto dignissimos omnis molestiae aperiam voluptatem beatae, illo unde exercitationem amet consequuntur velit minima cumque quis veritatis quo commodi sequi veniam!
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto dignissimos omnis molestiae aperiam voluptatem beatae, illo unde exercitationem amet consequuntur velit minima cumque quis veritatis quo commodi sequi veniam!lorem . lorem ipsum dolor sit amet, consectetur adip.lorem ipsum dolor sit amet, consectetur adip
                       </p>
                       <br>
                       
@@ -36,11 +61,11 @@
                               Shop Now
                           </button>
                         </div>
-                    </span>&nbsp;
+                    </span>
                 
             
                     <span class="tour-item1 tour-date">
-                      <video width="300" height="300" controls>
+                      <video width="400" height="300" controls>
                       <source src="video\WhatsApp Video 2021-08-05 at 11.32.38 AM.mp4" type="video/mp4">
                       <source src="movie.ogg" type="video/ogg">
                       Your browser does not support the video tag.
@@ -48,6 +73,83 @@
                     </span>
                 </div>
  
+        </section>
+
+        <section class="container content-section">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Cart Section-->
+        <section class="container content-section">
+            <div class="cart">
+                <a href="#"><i class="far fa-shopping-cart"></i> cart<span>0</span></a>
+            </div>
+            
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
         </section>
         <footer class="main-footer">
             <div class="container main-footer-container">

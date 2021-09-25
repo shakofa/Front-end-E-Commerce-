@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania"); */
 
 /* @font-face {
     font-family: "Booter - Zero Zero";
@@ -32,7 +32,7 @@ html, body {
 .nav a {
     display: inline-block;
     padding: .5em;
-    color: white;
+    color: rgb(247, 242, 242);
     text-decoration: none;
 }
 
@@ -40,7 +40,8 @@ html, body {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(52, 153, 43, 0.726)
+    border-bottom: 5px solid rgba(26, 85, 247, 0.726);
+    background-color:rgba(247, 162, 26, 0.726);
 }
 
 .main-nav li {
@@ -51,43 +52,67 @@ html, body {
     background-color: rgba(255, 255, 255, .3)
 }
 
+
+input{
+    border: 1px solid rgb(29, 23, 23);
+    border-radius: 10px;
+}
+
 .main-header {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Header Background.jpg");
+    background-color: rgba(138, 132, 80, 0.6);
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
 }
 
 .band-name {
-    text-align: center;
+    padding-left: 1em;
     margin: 0;
-    font-size: 4em;
+    font-size: 1em;
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .band-name-large {
-    font-size: 8em;
+    font-size: 5em;
 }
+
+.btn9 {
+    border: none;
+    background: none;
+    color: rgb(39, 35, 35);
+}
+
+.cart{
+    border: none;
+    background: none;
+}
+
+
 
 .content-section {
     margin: 1em;
 }
 
+
+
+
+/*main part*/
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
-.section-header {
+/* .section-header {
     font-family: "Metal Mania";
     font-weight: normal;
     color: rgb(184, 35, 35);
     text-align: center;
     font-size: 2.5em;
-}
+} */
 
 .about-band-image {
     float: left;
@@ -129,7 +154,7 @@ html, body {
     cursor: pointer;
 }
 
-.btn-header {
+/* .btn-header {
     margin: .5em 15% 2em 15%;
     color: white;
     border: 2px solid #2D9CDB;
@@ -139,7 +164,7 @@ html, body {
     font-weight: lighter;
     padding-left: 2em;
     padding-right: 2em;
-}
+} */
 
 .btn-header:hover {
     background-color: rgba(255, 255, 255, .3);
@@ -187,28 +212,41 @@ html, body {
     padding-right: 0pxl;
     margin: 10px 0;
     margin-left: 100px;
-
-
 }
 video{
     border-radius: 20px;
     border: none;
 }
+
+.btn3 {
+    /* align-items: center;
+    box-shadow: solid black 1px 1px; */
+        box-shadow: 3px 4px 0px 0px #899599;
+        background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+        background-color:#ededed;
+        border-radius:15px;
+        border:1px solid #d6bcd6;
+        display:inline-block;
+        cursor:pointer;
+        color:#3a8a9e;
+        font-family:Arial;
+        font-size:17px;
+        padding:7px 25px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #e1e2ed;
+    }
+    .btn3:hover {
+        background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+        background-color:#bab1ba;
+    }
+    .btn3:active {
+        position:relative;
+        top:1px;
+    }
 .tour-date {
     width: 30%;
 }
 
-/* .tour-city {
-    width: 24%;
-}
-
-.tour-arena {
-    width: 42%;
-} */
-
-.tour-btn {
-    max-width: 25%;
-}
 
 .shop-item {
     margin: 30px;
@@ -251,6 +289,17 @@ video{
     color: #333;
 }
 
+#parent {
+    display: table;
+    width: 100%; 
+    height: 100%;
+}
+
+#form {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
 .cart-column {
     display: flex;
     align-items: center;
