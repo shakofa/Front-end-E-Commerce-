@@ -4,157 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
-    <!-- font awsome --> 
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+   
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="sidebar.css"> 
-    <script type="text/javascript">
-      function togglemenue() {
-        document.getElementById("sidebar").classList.toggle("active");
-      }
+     <link rel="stylesheet" href="sidebar.css"> 
      
-    </script>
-    <title>N & L</title>
+     
+
+    <title>NL</title>
 
     
 </head>
 <body>
-   
-  <!-- <header class="header sticky-top">
-    <h1 class="nl">N & L
-      <button type="button" class="btn btn-sm">Sign In</button> 
-      <button type="button" class="btn btn-lg"><i class="far fa-shopping-cart"></i></button> 
-        
-      <p class="p">Baby Boutique</p> 
-    </h1>  
-  </header>
-  
-  <br>
 
-  <main class="container container-fluid">
- 
-  <nav class="nav">
-    <div class="container-fluid">
-      <a class="navbar-brand" aria-current="page" href="#">Home</a>
-      <a class="navbar-brand" href="#">About</a>
-      <a class="navbar-brand" href="#">Products</a>
-      <a class="navbar-brand" href="#">contact</a>
-          
-      <form class="d-flex">
-        <input class="form-control md-2" type="search" style="width: 200px" placeholder="Search" aria-label="Search">
-        <button class="btn0 btn-outline-success" type="submit"><i class="far fa-search"></i></button>
-      </form>
-    </div>
-  </nav>
-  <br>
-  <br>
-  <br>
-<hr>
-  <br>
-  <br>
-  
-    <div class="row">
-      <div class="col-5">
-          <img src="images\sh1.jpeg" class="rounded float-start" height="500" width="400" alt="...">
-      </div>
-       
-      <div class="col-5">
-        <p>
-          Complete set includ of one small baby bottle, one water bottle,baby comb and brush, and one baby nail cutter.
-        </p>
-        <p>$99.99</p>
-        <a href="cart.html">
-        <button type="button" class="btn8 btn-primary btn-lg">Add to cart</button></a>
-        <br>
-        <br>
-        <a href="home.html">
-        <button type="button" class="btn8 btn-primary btn-lg">Go back</button></a>
-      </div>
-    </div>
-  </main>
-  <br>
-  <br>
-  <br>
+<div class="container">
+  <nav class="navbar" id="navId">
+    <button type="button" onclick="myFunction(this)" class="toggle-collapse" id="toggle-button">
+      <i class="far fa-shopping-cart"></i>
 
-  <footer>
-    this is footer
-  </footer> -->
+    </button>
 
-  <!-- <div class="nav-right visible-xs">
-    <div class="button" id="btn">
-      <div class="bar top"></div>
-      <div class="bar middle"></div>
-      <div class="bar bottom"></div>
-    </div>
-  </div>
-  
-  <main>
-  
-  
-    <nav>
-      <div class="nav-right hidden-xs">
-        <div class="button" id="btn">
-          <div class="bar top"></div>
-          <div class="bar middle"></div>
-          <div class="bar bottom"></div>
-        </div>
-      </div>
+    <!-- <ul class="side-nav">
+      <li class="nav-item">
+        <a href="#" class="site-name">hhhh</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">gggggh</a>
+      </li>
+
+    </ul> -->
+
+    <section class="container content-section">
+      <div class="cart">
       
-    </nav>
-  
-  
-  </main>
-  
-  <div class="sidebar">
-    <ul class="sidebar-list">
-      <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 1</a></li>
-      <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 2</a></li>
-      <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 3</a></li>
-      <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 4</a></li>
-    </ul>
-  </div> -->
+      
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  </section>
+  </nav>
 
 
+</div>
 
-  <!-- <script type="text/javascript">
-    $(document).ready(function() {
+<script>
+function ready(){
+var cartBtn = document.getElementById("toggle-button")
+cartBtn.addEventListener("click", myFunction)
 
-function toggleSidebar() {
-  $(".button").toggleClass("active");
-  $("main").toggleClass("move-to-left");
-  $(".sidebar-item").toggleClass("active");
 }
 
-$(".button").on("click tap", function() {
-  toggleSidebar();
-});
+function myFunction(){
 
-$(document).keyup(function(e) {
-  if (e.keyCode === 27) {
-    toggleSidebar();
-  }
-});
+var elem = document.getElementById("navId"),
+style = window.getComputedStyle(elem),
+right = style.getPropertyValue("right");
 
-});
-  </script> -->
+if(right == "0px") {
 
+    elem.style.right = "-300px";
+}else{
+    elem.style.right= "0px";
+}
+}
 
+</script>
 
-  <div id="sidebar" onclick="togglemenue()">
-    <div class="toggle-btn">
-      <span></span>
-      <span></span>
-      <span></span>
-      </div>
-      <div>
-      <ul>
-        <li>r</li>
-        <li>e</li>
-        <li>w</li>
-        <li>t</li>
-      </ul>
-    </div>
-  </div>
+   
+
 </body>
 </html>
