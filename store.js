@@ -12,6 +12,13 @@ if (document.readyState == 'loading') {
 //add this function here is for hooking up the buttons.//
 
 function ready() {
+
+    var  cartBtn = document.getElementById("toggle-button"),
+    
+        cartBtn.addEventListener("click", show(sidebar.active));
+    
+
+
     var removeCartItemButtons = document.getElementsByClassName("btn-danger")
     console.log(removeCartItemButtons);
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -30,6 +37,7 @@ function ready() {
     for( var i = 0; i < addToCartButton.length; i++) {
         var button = addToCartButton[i];
         button.addEventListener("click", addToCartClicked, cardNumbers);
+        
     }
 
     //purchase button//
@@ -56,6 +64,7 @@ function cardNumbers() {
 
 function purchaseClicked() {
     alert("Thank you for you purchase");
+
     
     var prodctNumbers =localStorage.getItem("cardNumbers");
 
@@ -64,6 +73,9 @@ function purchaseClicked() {
         window.localStorage.setItem("cardNumbers", prodctNumbers = 0);
         document.querySelector(".cart span").textContent = prodctNumbers = 0;
     }
+
+
+    
 
     //this part remove all rows and its items from cart when the purchace btn clicked.//
     var cartItems = document.getElementsByClassName("cart-items")[0]

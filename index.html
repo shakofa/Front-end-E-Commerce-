@@ -5,6 +5,7 @@
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="style1.css" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="sidebar.css">
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
         <!-- font awsome --> 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -21,9 +22,12 @@
                 <input type="search" style="width: 200px" placeholder="Search" aria-label="Search">
                 <button class="btn9 btn-outline-success" type="submit"><i class="far fa-search"></i></button>
                 <button type="button" class="btn9 btn-sm">Sign In</button> 
-                <button type="button" class="cart">
+                <button type="button" onclick="myFunction()" class="cart" id="toggle-button">
                 <a href="#" ><i class="far fa-shopping-cart"></i><span>0</span></a>
                 </button>
+                
+
+               
                 </form>
                 
             </div>
@@ -47,7 +51,31 @@
                 <li><a href="about.html">CONTACT</a></li>
             </ul>
         </nav>
-        <br>
+        
+
+        <!-- <div class="container0"> -->
+            <sidebar class="navbar" id="navId">
+                <section class="container content-section">
+                    <div class="cart">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                </section>
+            </sidebar>
+        </div>
+
+
+
+        
         <section class="content-section container">
          
                 <div class="tour-row">
@@ -133,7 +161,7 @@
         </section>
 
         <!--Cart Section-->
-        <section class="container content-section">
+        <!-- <section class="container content-section">
             <div class="cart">
                 <a href="#"><i class="far fa-shopping-cart"></i> cart<span>0</span></a>
             </div>
@@ -150,7 +178,7 @@
                 <span class="cart-total-price">$0</span>
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-        </section>
+        </section> -->
         <footer class="main-footer">
             <div class="container main-footer-container">
                 <h3 class="band-name">The Generics</h3>
@@ -173,5 +201,28 @@
                 </ul>
             </div>
         </footer>
+
+        <script>
+            function ready(){
+            var cartBtn = document.getElementById("toggle-button")
+            cartBtn.addEventListener("click", myFunction)
+            
+            }
+            
+            function myFunction(){
+            
+            var elem = document.getElementById("navId"),
+            style = window.getComputedStyle(elem),
+            right = style.getPropertyValue("right");
+            
+            if(right == "0px") {
+                
+                elem.style.right = "-300px";
+            }else{
+                elem.style.right= "0px";
+            }
+            }
+            
+            </script>
     </body>
 </html>
