@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <script src="cart.js" ></script>
         <script src="store.js" async></script>
+        <!-- <script src="side.js"></script> -->
     </head>
     <body>
         <header class="main-header">
@@ -22,14 +23,11 @@
                 <input type="search" style="width: 200px" placeholder="Search" aria-label="Search">
                 <button class="btn9 btn-outline-success" type="submit"><i class="far fa-search"></i></button>
                 <button type="button" class="btn9 btn-sm">Sign In</button> 
+
                 <button type="button" onclick="myFunction()" class="cart" id="toggle-button">
                 <a href="#" ><i class="far fa-shopping-cart"></i><span>0</span></a>
                 </button>
-                
-
-               
                 </form>
-                
             </div>
             
             <!-- <span class="tour-item2 tour-date"> -->
@@ -46,7 +44,7 @@
         <nav class="nav main-nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="store.html">STORE</a></li>
+                <li><a href="#store">STORE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="about.html">CONTACT</a></li>
             </ul>
@@ -54,9 +52,9 @@
         
 
         <!-- <div class="container0"> -->
-            <sidebar class="navbar" id="navId">
-                <section class="container content-section">
-                    <div class="cart">
+        <sidebar class="sidebar" id="navId">
+            <section class="container content-section">
+                <div class="cart">
                     <div class="cart-row">
                         <span class="cart-item cart-header cart-column">ITEM</span>
                         <span class="cart-price cart-header cart-column">PRICE</span>
@@ -69,10 +67,12 @@
                         <span class="cart-total-price">$0</span>
                     </div>
                     <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-                </section>
-            </sidebar>
-        </div>
-
+                </div>
+            </section>
+            
+        </sidebar>
+       
+        <div  id="overlay"></div>
 
 
         
@@ -103,7 +103,7 @@
  
         </section>
 
-        <section class="container content-section">
+        <section class="container content-section" id="store">
             <div class="shop-items">
                 <div class="shop-item">
                     <span class="shop-item-title">Album 1</span>
@@ -201,7 +201,7 @@
                 </ul>
             </div>
         </footer>
-
+        
         <script>
             function ready(){
             var cartBtn = document.getElementById("toggle-button")
@@ -217,12 +217,12 @@
             
             if(right == "0px") {
                 
-                elem.style.right = "-300px";
+                elem.style.right = "-350px";
             }else{
                 elem.style.right= "0px";
             }
             }
             
-            </script>
+            </script> 
     </body>
 </html>

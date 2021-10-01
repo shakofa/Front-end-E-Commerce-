@@ -285,7 +285,7 @@ video{
 
 .cart-header {
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1em;
     color: #333;
 }
 
@@ -314,7 +314,7 @@ video{
 }
 
 .cart-item {
-    width: 45%;
+    width: 40%;
 }
 
 .cart-price {
@@ -330,7 +330,7 @@ video{
 .cart-item-title {
     color: #333;
     margin-left: .5em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .cart-item-image {
@@ -391,7 +391,8 @@ video{
 }
 
 .btn-purchase {
-    display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+    
+    margin: 60px auto 60px auto;
+    font-size: 1em;
+    text-align: center;
 }

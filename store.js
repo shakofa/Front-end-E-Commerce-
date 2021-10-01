@@ -12,13 +12,6 @@ if (document.readyState == 'loading') {
 //add this function here is for hooking up the buttons.//
 
 function ready() {
-
-    var  cartBtn = document.getElementById("toggle-button"),
-    
-        cartBtn.addEventListener("click", show(sidebar.active));
-    
-
-
     var removeCartItemButtons = document.getElementsByClassName("btn-danger")
     console.log(removeCartItemButtons);
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -43,7 +36,6 @@ function ready() {
     //purchase button//
     document.getElementsByClassName("btn-purchase")[0].addEventListener("click", purchaseClicked);
 }
-
 
 
 function cardNumbers() {
@@ -73,9 +65,6 @@ function purchaseClicked() {
         window.localStorage.setItem("cardNumbers", prodctNumbers = 0);
         document.querySelector(".cart span").textContent = prodctNumbers = 0;
     }
-
-
-    
 
     //this part remove all rows and its items from cart when the purchace btn clicked.//
     var cartItems = document.getElementsByClassName("cart-items")[0]
@@ -148,7 +137,7 @@ function addItemToCart(title, price, imageSrc) {
                     <span class="cart-price cart-column">${price}</span>
                     <div class="cart-quantity cart-column">
                         <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-danger" type="button">REMOVE</button>
+                        <button class="btn btn-danger" type="button">&times;</button>
                     </div>`
                     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow);
