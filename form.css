@@ -1,6 +1,6 @@
-*, *::after, *::before {
+ *, *::after, *::before {
   box-sizing: border-box;
-}
+} 
 
 .modal {
   position:fixed;
@@ -11,7 +11,7 @@
   border: 1px solid black;
   border-radius: 10px;
   z-index: 10;
-  background-color: white;
+  background-color: rgb(241, 239, 239);
   width: 500px;
   max-width: 80%;
   height: 300px;
@@ -24,7 +24,7 @@
   margin-bottom: 10px;
 }
 .modal.active {
-  transform: translate(-50%, -50%) scale(1);
+   transform: translate(-50%, -50%) scale(1); 
   transition: 200ms ease-in-out;
 
 }
@@ -67,11 +67,11 @@
   bottom: 0;
   
   transition: 200ms ease-in-out;
-  background-color: rgb(102, 93, 93);
+  background-color: rgb(216, 223, 247);
   pointer-events: none;
 }
 #overlay.active {
-  opacity: 1;
+  opacity: 2;
   pointer-events:  all;
 }
 
