@@ -106,8 +106,8 @@ function quantityChanged(event) {
 
 
 function addToCartClicked(event){
-    var button = event.target
-    var shopItem = button.parentElement.parentElement
+    var button1 = event.target
+    var shopItem = button1.parentElement.parentElement
     var title = shopItem.getElementsByClassName("shop-item-title")[0].innerText;
     var price = shopItem.getElementsByClassName("shop-item-price")[0].innerText;
     var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src
@@ -169,18 +169,28 @@ function updateCartTotall() {
 
 
 /*this is the pop up login form part */
-function ready(){
+function ready(){ 
     
-    var openModalButtons = document.querySelectorAll('[data-modal-target]')
-    var closeModalButtons = document.querySelectorAll('[data-close-button]')
-    var overlay = document.getElementById('overlay')
+    var openModalButtons = document.getElementsByClassName('open-button')
+    for(var i=0; i < openModalButtons.length; i++){
+        var openModel = openModalButtons[i]
+        openModel.addEventListener('click', openButton)
+    }
+
+     var closeModalButtons = document.querySelectorAll('[data-close-button]')
+     var overlay = document.getElementById('overlay')
     
-    openModalButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        var modal = document.querySelector(button.dataset.modalTarget)
+    function openButton(){
+///////////////////////////////
+        var modal = document.querySelector(".button.dataset.modalTarget")
         openModal(modal)
-      })
-    })
+    }
+    // forEach(button => {
+    //   button.addEventListener('click', () => {
+    //     var modal = document.querySelector(button.dataset.modalTarget)
+    //     openModal(modal)
+    //   })
+    // })
     
     overlay.addEventListener('click', () => {
       const modals = document.querySelectorAll('.modal.active')

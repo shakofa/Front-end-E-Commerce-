@@ -63,6 +63,7 @@ input{
     background-blend-mode: multiply; 
     background-size: cover;
     padding-bottom: 30px;
+    
 }
 
 .band-name {
@@ -114,13 +115,13 @@ input{
     font-size: 2.5em;
 } */
 
-.about-band-image {
+ .about-band-image {
     float: left;
     height: 200px;
     width: 200px;
     margin: 15px;
     border-radius: 50%;
-}
+} 
 
 .main-footer {
     background-color: #991165;
@@ -170,17 +171,6 @@ input{
     background-color: rgba(255, 255, 255, .3);
 }
 
-.btn-play {
-    display: block;
-    margin: 0 auto;
-    color: #2D9CDB;
-    font-size: 4em;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    text-align: center;
-}
 
 .btn-primary {
     color: white;
@@ -218,6 +208,7 @@ video{
     border: none;
 }
 
+/*store*/
 .btn3 {
     /* align-items: center;
     box-shadow: solid black 1px 1px; */
@@ -283,6 +274,8 @@ video{
     justify-content: space-around;
 }
 
+
+/*cart part*/
 .cart-header {
     font-weight: bold;
     font-size: 1em;
