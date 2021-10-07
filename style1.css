@@ -58,12 +58,14 @@ input{
     border-radius: 10px;
 }
 
+
+/*header*/
 .main-header {
     background-color: rgba(138, 132, 80, 0.6);
     background-blend-mode: multiply; 
     background-size: cover;
     padding-bottom: 30px;
-    
+    line-height: 36px;
 }
 
 .band-name {
@@ -115,14 +117,15 @@ input{
     font-size: 2.5em;
 } */
 
- .about-band-image {
+ /* .about-band-image {
     float: left;
     height: 200px;
     width: 200px;
     margin: 15px;
     border-radius: 50%;
-} 
+}  */
 
+/*footer*/
 .main-footer {
     background-color: #991165;
     color: white;
@@ -148,6 +151,8 @@ input{
     height: 30px;
 }
 
+
+/*add to cart button*/
 .btn {
     text-align: center;
     vertical-align: middle;
@@ -155,17 +160,6 @@ input{
     cursor: pointer;
 }
 
-/* .btn-header {
-    margin: .5em 15% 2em 15%;
-    color: white;
-    border: 2px solid #2D9CDB;
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 0;
-    font-size: 1.5em;
-    font-weight: lighter;
-    padding-left: 2em;
-    padding-right: 2em;
-} */
 
 .btn-header:hover {
     background-color: rgba(255, 255, 255, .3);
@@ -184,6 +178,7 @@ input{
     background-color: #2D9CDB;
 }
 
+/*first part of the home page*/
 .tour-row {
     border-bottom: 1px solid black;
     padding-bottom: 1em;
@@ -207,6 +202,8 @@ video{
     border-radius: 20px;
     border: none;
 }
+
+
 
 /*store*/
 .btn3 {
@@ -234,6 +231,7 @@ video{
         position:relative;
         top:1px;
     }
+
 .tour-date {
     width: 30%;
 }
@@ -295,10 +293,10 @@ video{
 }
 .cart-column {
     display: flex;
-    align-items: center;
+    align-items: center; 
     border-bottom: 1px solid black;
     margin-right: 1.5em;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
     margin-top: 10px;
 }
 
@@ -322,7 +320,7 @@ video{
 
 .cart-item-title {
     color: #333;
-    margin-left: .5em;
+    /* margin-left: .5em; */
     font-size: 1em;
 }
 
@@ -346,7 +344,7 @@ video{
 
 .cart-quantity-input {
     height: 34px;
-    width: 50px;
+    width: 30px;
     border-radius: 5px;
     border: 1px solid #56CCF2;
     background-color: #eee;

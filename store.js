@@ -12,6 +12,33 @@ if (document.readyState == 'loading') {
 //add this function here is for hooking up the buttons.//
 
 function ready() {
+
+    /*this is the pop up login form part */
+    var openModalButtons = document.querySelectorAll('[data-modal-target]')
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+           var modal = document.querySelector(button.dataset.modalTarget)
+           openModal(modal)
+       })
+   });
+
+   var overlay = document.getElementById('overlay')
+   overlay.addEventListener('click', () => {
+     const modals = document.querySelectorAll('.modal.active')
+     modals.forEach(modal => {
+       closeModal(modal)
+     })
+   })
+
+   var closeModalButtons = document.querySelectorAll('[data-close-button]')
+   closeModalButtons.forEach(button => {
+     button.addEventListener('click', () => {
+       var modal = button.closest('.modal')
+       closeModal(modal)
+     })
+   })
+   /*End of pop up form var*/
+
     var removeCartItemButtons = document.getElementsByClassName("btn-danger")
     console.log(removeCartItemButtons);
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -130,16 +157,17 @@ function addItemToCart(title, price, imageSrc) {
         }
     }
     var cartRowContents = `
-    <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-                        <span class="cart-item-title">${title}</span>
-                    </div>
-                    <span class="cart-price cart-column">${price}</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-danger" type="button">&times;</button>
-                    </div>`
-                    cartRow.innerHTML = cartRowContents
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+            <span class="cart-item-title">${title}</span>
+            
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">&times;</button>
+            </div>`
+     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow);
     cartRow.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem);
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener("change", quantityChanged);
@@ -169,43 +197,7 @@ function updateCartTotall() {
 
 
 /*this is the pop up login form part */
-function ready(){ 
-    
-    var openModalButtons = document.getElementsByClassName('open-button')
-    for(var i=0; i < openModalButtons.length; i++){
-        var openModel = openModalButtons[i]
-        openModel.addEventListener('click', openButton)
-    }
 
-     var closeModalButtons = document.querySelectorAll('[data-close-button]')
-     var overlay = document.getElementById('overlay')
-    
-    function openButton(){
-///////////////////////////////
-        var modal = document.querySelector(".button.dataset.modalTarget")
-        openModal(modal)
-    }
-    // forEach(button => {
-    //   button.addEventListener('click', () => {
-    //     var modal = document.querySelector(button.dataset.modalTarget)
-    //     openModal(modal)
-    //   })
-    // })
-    
-    overlay.addEventListener('click', () => {
-      const modals = document.querySelectorAll('.modal.active')
-      modals.forEach(modal => {
-        closeModal(modal)
-      })
-    })
-    
-    closeModalButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        var modal = button.closest('.modal')
-        closeModal(modal)
-      })
-    })
-    
     function openModal(modal) {
       if (modal == null) return
       modal.classList.add('active')
@@ -217,4 +209,4 @@ function ready(){
       modal.classList.remove('active')
       overlay.classList.remove('active')
     }
-    }
+    

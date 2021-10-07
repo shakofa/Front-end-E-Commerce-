@@ -9,9 +9,10 @@
   .sidebar{
     position: absolute;
     right:0px;
-    width:350px;
-    height: 100%;
-    border: 1px solid black;
+    width:400px;
+     height: 35%; 
+    /* border: 1px solid black; */
+    border-bottom: none;
     text-align: center;
     transition: 0.800s ease;
     background-color: white;

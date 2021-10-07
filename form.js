@@ -1,7 +1,7 @@
 
 
 
-var openModalButtons = document.querySelectorAll('[data-modal-target]')
+var openModalButtons = document.querySelectorAll('[data-modal]')
 var closeModalButtons = document.querySelectorAll('[data-close-button]')
 var overlay = document.getElementById('overlay')
 
@@ -36,4 +36,5 @@ function closeModal(modal) {
   if (modal == null) return
   modal.classList.remove('active')
   overlay.classList.remove('active')
+}
 }
