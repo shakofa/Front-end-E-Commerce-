@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="checkout.css"/>
+</head>
+<body>
+
+    <header class="main-header"> 
+        <div id="parent">
+            <h1 class="band-name band-name-large">N&L</h1>
+            <form id="form">
+            <input type="search" style="width: 200px" placeholder="Search" aria-label="Search">
+            <button class="btn9" type="submit"><i class="far fa-search"></i></button>
+            <button data-modal-target="#modal" ><a href="#modal" >Sign In</a></button> 
+            <button type="button" onclick="myFunction()" class="cart" id="toggle-button"></button>
+            </button>
+            </form>
+        </div>
+    </header>
+
+        
+    <nav class="nav main-nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#store">STORE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="about.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+
+    <section class="content-section container">
+
+        <h2>Make a Payment</h2>
+    </div>
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form >
+            
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="firstname">
+                  <label for="email"> Email</label>
+                  <input type="text" id="email" name="email">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fab fa-cc-visa" style="color:navy;"></i>
+                    <i class="fab fa-cc-amex" style="color:blue;"></i>
+                    <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fab fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" >
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" >
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CCV</label>
+                      <input type="text" id="cvv" name="cvv" >
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Place Order" class="btn">
+            </form>
+          </div>
+        </div>
+        <div class="col-25">
+            <div class="icon-container">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-square" style="color:rgb(106, 157, 240);"></i>
+                </a>
+                <br>
+                <br>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram" style="color:red;"></i>
+                </a>
+                <br>
+                <br>
+                <a href="https://www.twitter.com" target="_blank">
+                   <i class="fab fa-twitter" style="color:rgb(61, 194, 255);"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+      
+      
+    </section>
+    
+
+
+     <!--Footer-->
+     <footer class="main-footer">
+        <div class="container1 main-footer-container">
+            <h3 class="band-name">Footer</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                       <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
