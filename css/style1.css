@@ -239,6 +239,8 @@ video{
 
 .shop-item {
     margin: 30px;
+    border: 1px solid black;
+    box-shadow: purple 4px;
 }
 
 .shop-item-title {

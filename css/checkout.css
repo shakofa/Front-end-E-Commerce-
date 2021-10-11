@@ -59,6 +59,20 @@
     font-size: 24px;
   }
   
+   .fb:hover{
+    font-size: 30px;
+    color:rgb(44, 148, 134);
+  }
+
+  .insta:hover{
+    font-size: 30px;
+    color: darkred;
+  }
+
+
+  .twit:hover{
+      font-size: 30px;
+  }
   .btn {
     background-color: #8bf0c9;
     color: white;
