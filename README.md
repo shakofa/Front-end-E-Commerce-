@@ -1,1 +1,3 @@
-# Front-end-E-Commerce-
+# Front-end-E-Commerce
+##
+This is my solo project.
