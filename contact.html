@@ -17,6 +17,56 @@
     <script src="javascript/cart.js" ></script>
     <script src="javascript/store.js" async></script>
     <title>Contact</title>
+
+    <style>
+       
+        /* Navigation bar styling */
+        /* .menu-list {
+            max-width: 100px;
+            margin: auto;
+            height: 500px;
+            color: white;
+            background-color: green;
+            border-radius: 10px;
+        } */
+       
+        /* logo, navigation menu styling */
+        .geeks {
+            overflow: hidden;
+            background-color: rgb(17, 16, 16);
+            position: relative;
+            left: 70%;
+            right:40%
+        }
+       
+        /* styling navigation menu */
+        .geeks #menus {
+            display: none;
+        }
+       
+        /* link specific styling */
+        .geeks a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 16px;
+            font-size: 16px;
+            display: block;
+        }
+       
+        /* navigation toggle menu styling */
+        .geeks a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+       
+        /* hover effect on navigation logo and menu */
+        .geeks a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <header class="main-header"> 
@@ -40,27 +90,26 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="#store">STORE</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#"  onclick="geeksforgeeks()">CONTACT</a></li>
         </ul>
     </nav>
 
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <h2>Please contact us via email or text message.</h2>
-            <div class="col-6">
+            <div class="col-md-4">
                <div class="card">
-                   <img src="http://placehold.it/" alt="">
+                   <img src="images\knk.jpg" alt="">
                    <h4>Hsina Mahmody</h4>
                    <p>E-mail: <a href="mailto:hasina.mahmody@gmal.com"></a></p>
                    <p>Phone: <a href="tel:222788790"></a></p>
-
                </div>
-
             </div>
-            <div class="col-md-6">
+
+            <div class="col-md-4">
                 <div class="card">
-                    <img src="http://placehold.it/" alt="">
+                    <img src="images\knk.jpg" alt="">
                     <h4>Hsina Mahmody</h4>
                     <p>E-mail: <a href="mailto:hasina.mahmody@gmal.com"></a></p>
                     <p>Phone: <a href="tel:222788790"></a></p>
@@ -69,6 +118,47 @@
  
             </div>
         </div>
+    </div> -->
+
+    <div class="menu-list">
+ 
+        <!-- Logo and navigation menu -->
+        <div class="geeks">
+    
+            <div id="menus">
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+ 
+    <script>
+       
+        // Function to toggle the bar
+        function geeksforgeeks() {
+            var x = document.getElementById("menus");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
 </body>
 </html>
