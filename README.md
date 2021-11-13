@@ -1,3 +1,3 @@
 # Front-end-E-Commerce
 ##
-This is my solo project.
+An Ecommerce website for shopping online.
