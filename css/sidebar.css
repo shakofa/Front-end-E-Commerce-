@@ -37,7 +37,7 @@
     bottom: 0;
     
     transition: 200ms ease-in-out;
-    background-color: rgb(102, 93, 93);
+    background-color: rgb(201, 108, 108);
     pointer-events: none;
   }
   #overlay.active {
