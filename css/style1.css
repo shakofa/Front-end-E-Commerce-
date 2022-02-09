@@ -12,13 +12,14 @@
 * {
     box-sizing: border-box;
     font-family: Raleway;
-    color: rgb(236, 192, 192);
+    color: rgb(10, 10, 10);
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+   
+    
 }
 
 .nav ul {
@@ -80,7 +81,7 @@ input{
 }
 
 .band-name-large {
-    font-size: 5em;
+    font-size: 2em;
 }
 
 .btn9 {
@@ -96,9 +97,9 @@ input{
 
 
 
-.content-section {
+/* .content-section {
     margin: 1em;
-}
+} */
 
 
 
@@ -106,8 +107,10 @@ input{
 /*main part*/
 .container {
     max-width: 900px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 1.5em;
+    /* display:flex; */
 }
 /* .section-header {
     font-family: "Metal Mania";
@@ -129,7 +132,9 @@ input{
 .main-footer {
     background-color: #991165;
     color: white;
-    padding: .25em 0;
+    /* padding: .25em 0; */
+    bottom: 0px;
+    margin: 0px;
 }
 
 .main-footer-container {
