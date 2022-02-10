@@ -1,9 +1,13 @@
 
   * {
     box-sizing: border-box;
+
   }
 
+  .content-section{
+    align-items: center;
   
+  }
   h2 {
       text-align: center;
   }
@@ -13,13 +17,12 @@
     display: flex;
     /* -ms-flex-wrap: wrap;  */
     /* flex-wrap: wrap; */
-   
     align-items: center;
   }
   
-  col-25 {
-    -ms-flex: 25%; 
-    flex: 25%;
+  .col-25 {
+    display: flex;
+    flex-basis: 100px;
   }
   
   .col-50 {
