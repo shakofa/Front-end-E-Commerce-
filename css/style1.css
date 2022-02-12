@@ -62,7 +62,7 @@ input{
 
 /*header*/
 .main-header {
-    background-color: rgba(138, 132, 80, 0.6);
+    background-color: rgba(236, 133, 236, 0.6);
     background-blend-mode: multiply; 
     background-size: cover;
     padding-bottom: 30px;
