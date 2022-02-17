@@ -109,7 +109,9 @@ input{
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1.5em;
+    /* padding: 0 1.5em; */
+    transition: left .5s;
+    
     /* display:flex; */
 }
 /* .section-header {
@@ -187,7 +189,8 @@ input{
 .tour-row {
     border-bottom: 1px solid black;
     padding-bottom: 1em;
-    margin-bottom: 1em;
+    left: auto;
+    right: auto;
 }
 
 .tour-item {
