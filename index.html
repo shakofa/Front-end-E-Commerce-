@@ -78,6 +78,7 @@
         <!-- sidebar popup -->
         <sidebar class="sidebar" id="navId">
             <section class="container content-section">
+                <button class="closebtn" onclick="closeNav()">&times;</button>
                 <div class="cart">
                     <div class="cart-row">
                         <span class="cart-item cart-header cart-column">ITEM</span>
@@ -98,7 +99,7 @@
        
         
         
-        <section class="content-section container">
+        <section class="content-section container" id="main-container">
          
                 <div class="tour-row">
                     <span class="tour-item tour-date">
@@ -258,6 +259,7 @@
         <div id="overlay"></div>
 
         
+        
         <script>
             function ready(){
             var cartBtn = document.getElementById("toggle-button")
@@ -266,20 +268,13 @@
             }
            
             function myFunction(){
-            
-            var elem = document.getElementById("navId"),
-            style = window.getComputedStyle(elem),
-            right = style.getPropertyValue("right");
-            
-            if(right == "0px") {
-                
-                elem.style.right = "-400px";
+                document.getElementById("navId").style.width = "250px";
             }
-            else{
-                elem.style.right = "0px";
-            }
+
+            function closeNav() {
+                document.getElementById("navId").style.width = "0";
             }
    
-            </script> 
+        </script> 
     </body>
 </html>
