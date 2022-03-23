@@ -62,7 +62,7 @@ ul {
   text-align: center;
   padding-top: 15px;
 }
-.btn{
+
 
   
     /* padding-left: 1em; */
@@ -74,7 +74,6 @@ ul {
    
     
 
-}
 .btn8{
   border-radius: 10px;
   background-color: rgb(170, 170, 20);
@@ -148,7 +147,7 @@ footer {
         border:1px solid #d6bcd6;
         display:inline-block;
         cursor:pointer;
-        color:#3a8a9e;
+        color:#8ed0e0;
         font-family:Arial;
         font-size:17px;
         padding:7px 25px;
