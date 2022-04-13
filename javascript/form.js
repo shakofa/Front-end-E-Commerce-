@@ -1,5 +1,5 @@
-
-
+var modalSize = document.getElementById('modal');
+modalSize.style.width ='500px';
 
 var openModalButtons = document.querySelectorAll('[data-modal]')
 var closeModalButtons = document.querySelectorAll('[data-close-button]')
@@ -7,9 +7,12 @@ var overlay = document.getElementById('overlay')
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
+   
     var modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
+    openModal(modal);
+     modal.style.width = "950px";
+  }
+  )
 })
 
 overlay.addEventListener('click', () => {

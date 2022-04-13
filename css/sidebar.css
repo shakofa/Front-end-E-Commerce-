@@ -18,17 +18,16 @@
     /* transform: translate(-10%, -10%, -20%) scale(0);
     transition: 200ms ease-in-out; */
 
-   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
+   height: 100%;
+  position: absolute; 
   z-index: 2; /* Stay on top */
   top: 10;
   right: 0;
   background-color: white;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  overflow-x: hidden;
+  padding-top: 60px; 
   transition: 0.5s;
-  border: 1px solid black;
+  border: 1px solid rgb(249, 246, 246);
   }
 
    .cart.active {

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/sidebar.css" /> 
+        <link rel="stylesheet" href="css/form.css" />
+         <!-- font awsome --> 
+         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+         <script src="javascript/cart.js" ></script>
+         <script src="javascript/store.js" async></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="main-header"> 
+        <div id="parent">
+            <h1 class="band-name band-name-large">N&L</h1>
+            <form id="form">
+            <input type="search" style="width: 200px" placeholder="Search" aria-label="Search">
+            <button class="btn9" type="submit"><i class="far fa-search"></i></button>
+            <button data-modal-target="#modal" ><a href="#modal" >Sign In</a></button> 
+
+            <button type="button" onclick="myFunction()" class="cart" id="toggle-button">
+            <a href="#" ><i class="far fa-shopping-cart"></i><span>0</span></a>
+            </button>
+            </form>
+        </div>
+    </header>
+
+
+    <nav class="nav main-nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#store">STORE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <!-- <li><a href="#" class="contact" onclick="geeksforgeeks()">CONTACT</a></li> -->
+        </ul>
+    </nav>
+
+     <!-- sidebar popup -->
+     <!-- <div class="sidebar" id="navId"> -->
+        <section class="container content-section">
+            <!-- <button class="closebtn" onclick="closeNav()">&times;</button> -->
+            <div class="cart">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button"><a href="checkout.html">Check Out</a></button>
+            </div>
+        </section>
+        
+    </div>
+
+
+     <!--Footer-->
+     <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">Footer</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+
+
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                       <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
