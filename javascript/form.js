@@ -7,10 +7,11 @@ var overlay = document.getElementById('overlay')
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-   
+    
+                
     var modal = document.querySelector(button.dataset.modalTarget)
     openModal(modal);
-     modal.style.width = "950px";
+
   }
   )
 })

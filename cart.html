@@ -26,7 +26,7 @@
             <button data-modal-target="#modal" ><a href="#modal" >Sign In</a></button> 
 
             <button type="button" onclick="myFunction()" class="cart" id="toggle-button">
-            <a href="#" ><i class="far fa-shopping-cart"></i><span>0</span></a>
+            <a href="index.html" ><i class="far fa-shopping-cart"></i><span>0</span></a>
             </button>
             </form>
         </div>
@@ -43,7 +43,7 @@
     </nav>
 
      <!-- sidebar popup -->
-     <!-- <div class="sidebar" id="navId"> -->
+      <div id="navId"> 
         <section class="container content-section">
             <!-- <button class="closebtn" onclick="closeNav()">&times;</button> -->
             <div class="cart">
@@ -91,7 +91,22 @@
         </div>
     </footer>
 
+    <script>
+        function ready(){
+        var cartBtn = document.getElementById("toggle-button")
+        cartBtn.addEventListener("click", myFunction)
+        
+        }
+       
+        function myFunction(){
+            document.getElementById("navId").style.width = "250px";
+        }
 
+        function closeNav() {
+            document.getElementById("navId").style.width = "0";
+        }
+
+    </script> 
 
 </body>
 </html>

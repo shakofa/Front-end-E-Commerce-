@@ -19,8 +19,6 @@ html, body {
     margin: 0;
     padding: 0;
     height:100%;
-   
-    bottom: 0px;
 }
 
 .nav ul {
@@ -34,7 +32,7 @@ html, body {
 .nav a {
     display: inline-block;
     padding: .5em;
-    color: rgb(51, 8, 45);
+    color: rgb(18, 1, 15);
     text-decoration: none;
 }
 
@@ -42,8 +40,8 @@ html, body {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 5px solid rgba(26, 85, 247, 0.726);
-    background-color:rgba(247, 162, 26, 0.726);
+    border-bottom: 5px solid rgba(6, 123, 72, 0.726);
+    background-color:rgba(165, 208, 184, 0.726);
 }
 
 .main-nav li {
@@ -51,7 +49,7 @@ html, body {
 }
 
 .nav a:hover {
-    background-color: rgba(172, 103, 103, 0.3)
+    background-color: rgba(173, 187, 218, 0.3)
 }
 
 
@@ -63,26 +61,27 @@ input{
 
 /*header*/
 .main-header {
-    background-color: rgba(78, 19, 78, 0.6);
+    background-color: rgba(246, 247, 248, 0.6);
     background-blend-mode: multiply; 
     background-size: cover;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     line-height: 36px;
+    height: 100px;
 }
 
 .band-name {
     padding-left: 1em;
-    margin: 0;
-    font-size: 1em;
+    margin-top: 20px;
+    font-size: 65px;
     font-family: "Booter - Zero Zero";
-    font-weight: normal;
-    color: white;
+    font-weight: bold;
+    color: rgb(214, 62, 209);
     text-align: center;
     vertical-align: middle;
 }
 
 .band-name-large {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .btn9 {
@@ -133,8 +132,8 @@ input{
 
 /*footer*/
 .main-footer {
-    background-color: #991165;
-    color: white;
+    background-color: #edc0c0;
+    color: rgb(255, 255, 255);
     /* padding: .25em 0; */
     bottom: 0px;
     margin: 0px;

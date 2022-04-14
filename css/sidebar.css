@@ -33,6 +33,7 @@
    .cart.active {
     transform: translate(-50%, -50%) scale(1);
     transition: 200ms ease-in-out;
+    width: 100%;
   
   }
 

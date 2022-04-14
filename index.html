@@ -30,8 +30,8 @@
 
                 <button type="button"  class="cart" 
                 onclick="myFunction()"  
-                id="toggle-button">
-                <a href="cart.html" ><i class="far fa-shopping-cart"></i><span>0</span></a>
+                id="toggle-button" >
+                <a href="#" ><i class="far fa-shopping-cart"></i><span>0</span></a>
                 </button>
                 
                 
@@ -98,7 +98,7 @@
             </section>
             
         </sidebar>
-       
+        
         
         
         <section class="content-section container" id="main-container">
@@ -282,7 +282,7 @@
 
         
         
-        <script>
+         <script>
             function ready(){
             var cartBtn = document.getElementById("toggle-button")
             cartBtn.addEventListener("click", myFunction)
@@ -290,13 +290,13 @@
             }
            
             function myFunction(){
-                document.getElementById("navId").style.width = "250px";
+                document.getElementById("navId").style.width = "400px";
             }
 
             function closeNav() {
                 document.getElementById("navId").style.width = "0";
             }
    
-        </script> 
+        </script>  
     </body>
 </html>
