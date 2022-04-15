@@ -8,10 +8,10 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid black;
+  border: 2px solid rgb(169, 166, 166);
   border-radius: 10px;
   z-index: 10;
-  background-color: rgb(241, 239, 239);
+  background-color: rgb(253, 253, 253);
   width: 500px;
   max-width: 80%;
   height: 300px;
@@ -67,7 +67,8 @@
   bottom: 0;
   
   transition: 200ms ease-in-out;
-  background-color: rgb(216, 223, 247);
+  background-color: rgba(255, 255, 255, 1);
+
   pointer-events: none;
 }
 #overlay.active {
@@ -84,7 +85,7 @@
 .bt {
   border: none;
   background-color: none;
-  color:rgb(255, 0, 212);
+  color:rgb(96, 87, 87);
   text-decoration: none;
 }
 
@@ -92,7 +93,7 @@
   height: 35px;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: rgb(219, 230, 243);
+  background-color: rgb(253, 253, 253);
 
 }
 .b {
@@ -100,7 +101,7 @@
   height: 35px;
   width: 100%; max-width: 376px; min-width: 280px;
   font-size: 20px;
-  background-color: rgb(18, 117, 211);
+  background-color: rgb(101, 137, 172);
   color: white;
   border:none;
 }

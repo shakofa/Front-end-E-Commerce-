@@ -71,11 +71,12 @@ input{
 
 .band-name {
     padding-left: 1em;
-    margin-top: 20px;
+    bottom:0;
     font-size: 65px;
     font-family: "Booter - Zero Zero";
     font-weight: bold;
-    color: rgb(214, 62, 209);
+    color: rgb(88, 196, 242);
+    text-shadow: 2px 3px rgb(222, 71, 184);
     text-align: center;
     vertical-align: middle;
 }
@@ -109,34 +110,21 @@ input{
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 0 1.5em; */
     transition: left .5s;
+    background-color: white;
     
-    /* display:flex; */
 }
-/* .section-header {
-    font-family: "Metal Mania";
-    font-weight: normal;
-    color: rgb(184, 35, 35);
-    text-align: center;
-    font-size: 2.5em;
-} */
 
- /* .about-band-image {
-    float: left;
-    height: 200px;
-    width: 200px;
-    margin: 15px;
-    border-radius: 50%;
-}  */
 
 /*footer*/
 .main-footer {
-    background-color: #edc0c0;
+    background-color: #fefbfb;
+    border-top:8px solid rgb(105, 160, 108);
     color: rgb(255, 255, 255);
     /* padding: .25em 0; */
     bottom: 0px;
     margin: 0px;
+
 }
 
 .main-footer-container {
@@ -146,7 +134,7 @@ input{
 
 .main-footer-container ul {
     flex-grow: 1;
-    text-align: end;
+    text-align: center;
 }
 
 .footer-nav li {
@@ -165,6 +153,7 @@ input{
     vertical-align: middle;
     padding: .67em .67em;
     cursor: pointer;
+    
 }
 
 
@@ -175,14 +164,15 @@ input{
 
 .btn-primary {
     color: white;
-    background-color: #97ce3e;
+    
+    background-color: #2D9CDB;
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    background-color: #3cb650;
 }
 
 /*first part of the home page*/
@@ -248,8 +238,8 @@ video{
 
 .shop-item {
     margin: 30px;
-    border: 1px solid black;
-    box-shadow: purple 4px;
+    border: none;
+    box-shadow:0px 3px 0px #8da591;
 }
 
 .shop-item-title {

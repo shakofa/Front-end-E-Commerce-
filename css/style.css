@@ -29,7 +29,7 @@ ul {
 .container3{
     text-align: center;
     padding-left: 12%;
-    margin-top: 40px;
+   
 
 }
 .head{
@@ -76,7 +76,7 @@ ul {
 
 .btn8{
   border-radius: 10px;
-  background-color: rgb(170, 170, 20);
+  background-color: rgb(50, 103, 47);
   color: black;
   border-bottom: 1px solid black;
   box-shadow: rgb(209, 56, 10) ;
@@ -142,12 +142,12 @@ footer {
     box-shadow: solid black 1px 1px; */
         box-shadow: 3px 4px 0px 0px #899599;
         background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-        background-color:#ededed;
+        background-color:#e1d0d0;
         border-radius:15px;
-        border:1px solid #d6bcd6;
+        border:1px solid #a28ca2;
         display:inline-block;
         cursor:pointer;
-        color:#8ed0e0;
+        color:#0b0b0b;
         font-family:Arial;
         font-size:17px;
         padding:7px 25px;
