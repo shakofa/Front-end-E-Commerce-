@@ -8,19 +8,43 @@
     
     <link rel="stylesheet" href="css/style1.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/sidebar.css" /> 
-    <link rel="stylesheet" href="css/form.css" />
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!--     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
     <!-- font awsome --> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 
     <script src="javascript/cart.js" ></script>
     <script src="javascript/store.js" async></script>
     <title>Contact</title>
 
     <style>
-       
+      .container1{
+        text-align: center;
+        left:0%;
+        right:0%;
+        margin-top:7%;
+      } 
+      
+      .col-md-3 {
+        padding-top:30px;
+      }
+
+      .contact-btn {
+        width: 150px;
+        height: 40px;
+        border: 1px solid;
+        font-size: 18px;
+      }
+      .fab {
+      
+        font-size: 30px;
+      }
         
+      .fas {
+        font-size: 30px;
+      }
     </style>
 </head>
 <body>
@@ -29,7 +53,7 @@
             <h1 class="band-name band-name-large">N&L</h1>
             <form id="form">
             <input type="search" style="width: 200px" placeholder="Search" aria-label="Search">
-            <button class="btn9" type="submit"><i class="far fa-search"></i></button>
+            <button class="btn9" type="submit"><i class="far fa-shopping-cart"></i></button>
             <button data-modal-target="#modal" ><a href="#modal" >Sign In</a></button> 
 
             <button type="button" onclick="myFunction()" class="cart" id="toggle-button">
@@ -50,29 +74,28 @@
     </nav>
 
 
-    <div class="container">
+    <div class="container1" >
+        
         <div class="row">
-            <h2>Get in Touch!</h2>
+            <h2>CONTACT US</h2>
+            
             <div class="col-md-3">
-               hi
-               <button>Email us</button>
+                <p><i class='fas fa-envelope'></i></p>
+               <button class="contact-btn">Email us</button>
             </div>
             <div class="col-md-3">
-               hi
-               <button>Instagram</button>
+               <p><i class="fab fa-instagram"></i></p>
+               <button class="contact-btn">Instagram</button>
             </div>
+        
             <div class="col-md-3">
-                hi
-                <button>Instagram</button>
-             </div>
-            <div class="col-md-3">
-               hi
-               <button>Tiktalk</button>
+                <p><i class="fab fa-tiktok" ></i></p>
+               <button class="contact-btn">Tiktalk</button>
             </div>
 
             <div class="col-md-3">
-               hi
-                <button>Facebook</button>
+                <p> <i class="fab fa-facebook-square"></i></p>
+                <button class="contact-btn">Facebook</button>
             </div>
         </div>
     </div>  
