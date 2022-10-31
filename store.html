@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> N&L</title>
+        <meta name="description" content="This is the description">
+
+        <link rel="stylesheet" href="css/style1.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/sidebar.css" /> 
+        <link rel="stylesheet" href="css/form.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <script src="javascript/cart.js" ></script>
+        <script src="javascript/store.js" async></script>
+    
+    </head>
+    <body>
+        
+        <header class="main-header"> 
+            <div id="parent">
+                <h1 class="band-name band-name-large">N&L</h1>
+                <form id="form">
+                    <input type="search" style="width: 200px" placeholder="Search" aria-label="Search">
+                    <button class="btn9" type="submit"><i class="far fa-search"></i></button>
+                    <button data-modal-target="#modal" ><a href="#modal" >Sign In</a></button> 
+                    <button type="button"  class="cart" 
+                    onclick="myFunction()"  
+                    id="toggle-button" >
+                    <a href="#" ><i class="far fa-shopping-cart"></i><span>0</span></a>
+                    </button>
+                </form>
+            </div>
+        </header>
+
+    
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#store">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+          
+        <!-- sidebar popup -->
+        <sidebar class="sidebar" id="navId">
+            <section class="container content-section">
+                <button class="closebtn" onclick="closeNav()">&times;</button>
+                <div class="cart">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button"><a href="checkout.html">Check Out</a></button>
+                </div>
+            </section>
+            
+        </sidebar>
+
+
+        <!--Store section-->
+        <section class="container content-section" id="store">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <div class="card">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$10.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <section class="container content-section">
+            <div class="shop-items">
+                <div class="shop-item">
+                    
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Tea Cup</span>
+                    <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>   
+        </section>
+
+       <!--Footer-->
+        <footer class="main-footer">
+            <div class="container3 main-footer-container">
+               
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-facebook-square" style="font-size: 24px"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <i class="fab fa-instagram" style="font-size: 24px"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                           <i class="fab fa-twitter" style="font-size: 24px"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+
+
+         <!--Log in modal-->
+         <div class="modal" id="modal">
+            <div class="modal-header">
+            <div class="title">Login</div>
+            <button data-close-button  class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+            <container class="form-part">
+                <form>
+                <div class="one">
+                    <div class="co">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <br>
+                    <input type="email" class="form-control" id="inputEmail3" style="width: 100%; max-width: 376px; min-width: 280px;">
+                    </div>
+                </div>
+                    <br>
+                    <div class="two">
+                    <div class="co">
+                        <label for="inputPassword3"class="col-sm-2 col-form-label">Password</label>
+                        <br>
+                        <input type="password" class="form-control" id="inputPassword3" style="width: 100%; max-width: 376px; min-width: 280px;">
+                    </div>
+                    </div>
+                    <br> 
+                <div class="co">
+                    <button type="submit" data-automation-id="signInSubmitButton" font-size="14"  class="b" aria-hidden="true">Sign In</button>
+                    </div>
+                </div>
+                
+                </form>
+                <div class="cs">Don't have an account yet?&ensp;<a href="#" class="bt">Create Account</a>
+                </div>
+                <div class="cs">
+                <a href="#" class="bt">Forgot your password?</a>
+                </div>
+            </container>
+            </div>
+        </div>
+        <div id="overlay"></div>
+
+        
+         <script>
+            function ready(){
+            var cartBtn = document.getElementById("toggle-button")
+            cartBtn.addEventListener("click", myFunction)
+            
+            }
+           
+            function myFunction(){
+                document.getElementById("navId").style.width = "400px";
+            }
+
+            function closeNav() {
+                document.getElementById("navId").style.width = "0";
+            }
+   
+        </script>  
+    </body>
+</html>
