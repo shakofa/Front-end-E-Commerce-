@@ -1,18 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania"); */
 
-/* @font-face {
-    font-family: "Booter - Zero Zero";
-    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-} */
 
 * {
     box-sizing: border-box;
-    font-family: Raleway;
-    color: rgb(10, 10, 10);
 }
 
 html, body {
@@ -73,10 +62,9 @@ input{
     padding-left: 0.5em;
     bottom:0;
     font-size: 30px;
-    font-family: "Booter - Zero Zero";
-    font-weight: bold;
-    color: rgb(1, 1, 1);
-    text-shadow: 2px 3px rgb(177, 168, 175);
+    font-family: "Dancing Script";
+    color: rgb(73, 69, 69);
+    /* text-shadow: 2px 3px rgb(177, 168, 175); */
     text-align: center;
     vertical-align: middle;
 }
@@ -120,7 +108,7 @@ input{
 .main-footer {
     background-color: #fefbfb;
     border-top:8px solid rgba(229, 193, 190, 0.726);
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     /* padding: .25em 0; */
     bottom: 0px;
     margin: 0px;
@@ -128,7 +116,7 @@ input{
 }
 
 .main-footer-container {
-    display: flex;
+    /* display: flex; */
     align-items: center;
 }
 
@@ -151,7 +139,7 @@ input{
 .btn {
     text-align: center;
     vertical-align: middle;
-    padding: .67em .67em;
+    /* padding: .67em .67em; */
     cursor: pointer;
     
 }
@@ -203,22 +191,25 @@ video{
 }
 
 
-
+.text-center{
+    text-align: center;
+}
 /*store*/
 .btn3 {
     /* align-items: center;
     box-shadow: solid black 1px 1px; */
         box-shadow: 3px 4px 0px 0px #899599;
-        background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+        background:linear-gradient(to bottom, #ededed 5%, #b5a7b5 100%);
         background-color:#ededed;
         border-radius:15px;
-        border:1px solid #d6bcd6;
+        border:1px solid #d8b5d8;
         display:inline-block;
         cursor:pointer;
         color:#0e4f5f;
         font-family:Arial;
         font-size:17px;
         padding:7px 25px;
+        text-align: center;
         text-decoration:none;
         text-shadow:0px 1px 0px #e1e2ed;
     }
@@ -399,9 +390,10 @@ video{
 }
 
 .home-p {
-    font-family: "Dancing Script" ;
-    font-style: inherit;
-    font-size: 30px;
-    font-weight: normal;
+    font-family:   Copperplate, ;
+    font-size: 20px;
+    line-height: 2em;
+    
+    
     
 }
