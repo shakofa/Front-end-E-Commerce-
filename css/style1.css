@@ -40,8 +40,8 @@ html, body {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 5px solid rgba(6, 123, 72, 0.726);
-    background-color:rgba(165, 208, 184, 0.726);
+    border-bottom: 5px solid rgba(229, 193, 190, 0.726);
+    background-color:rgba(242, 227, 216, 0.726);
 }
 
 .main-nav li {
@@ -119,7 +119,7 @@ input{
 /*footer*/
 .main-footer {
     background-color: #fefbfb;
-    border-top:8px solid rgb(105, 160, 108);
+    border-top:8px solid rgba(229, 193, 190, 0.726);
     color: rgb(255, 255, 255);
     /* padding: .25em 0; */
     bottom: 0px;
@@ -177,7 +177,7 @@ input{
 
 /*first part of the home page*/
 .tour-row {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     padding-bottom: 1em;
     left: auto;
     right: auto;
@@ -387,4 +387,21 @@ video{
     margin: 60px auto 60px auto;
     font-size: 1em;
     text-align: center;
+}
+
+
+.discoverh2 {
+    font-family: "Dancing Script"; font-style: normal; font-variant: small-caps; line-height: 10.2px;
+    color: rgb(76, 171, 253);
+    text-align: center;
+
+    font-size: 2em;
+}
+
+.home-p {
+    font-family: "Dancing Script" ;
+    font-style: inherit;
+    font-size: 30px;
+    font-weight: normal;
+    
 }
