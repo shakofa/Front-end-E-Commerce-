@@ -76,8 +76,32 @@
          -->
         
         
+            <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images\bottl.jpg" width="100%" height="600px" >
+            </div>
+
+            <div class="mySlides fade">
+            <img src="images\brush.jpg" width="100%" height="600px">
+          </div>
+        
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+                
         <section class="content-section container" id="main-container">
          
+            <h2>Discover N&L Babay Boutique</h2>
+            <p>N&L baby Boutique is a babies world made of crystal, glam and shine for your little ones.
+                Totally handmade with high quality material.
+            </p>
+            <p>
+                N&L baby boutique's trademark is above all handmade items in superior quality crystals and baby products for children and babies. Beautiful products, designed by a mother, combine practicality and trendy design to allow your child to blossom in a shiny and neat world. The baby care products are made in small series with passion and all the love of a mother!
+            </p>
                 <div class="tour-row">
                     <span class="tour-item tour-date">
                       <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto dignissimos omnis molestiae aperiam voluptatem beatae, illo unde exercitationem amet consequuntur velit minima cumque quis veritatis quo commodi sequi veniam!lorem . lorem ipsum dolor sit amet, consectetur adip.lorem ipsum dolor sit amet, consectetur adip
@@ -90,12 +114,14 @@
                           </button>
                         </div> -->
 
-                        <p>N&L Baby Boutique!</p>
+                        <p>N&L Baby Boutique!
+                            Dollbling Handmade Pink Crystal Baby Bottle Glam Pacifier Milk Feeding 
+                        </p>
                     </span>
                 
             
                     <span class="tour-item1 tour-date">
-                        <img class="shop-item-image" src="images\my-little-kris-bear-baby-swarovski-5557541.jpg">
+                        <!-- <img class="shop-item-image" src="bear.jpg"> -->
                         
                       <!-- <video width="400" height="auto" controls>
                       <source src="video\WhatsApp Video 2021-08-05 at 11.32.38 AM.mp4" type="video/mp4">
@@ -274,6 +300,36 @@
                 document.getElementById("navId").style.width = "0";
             }
    
+
+
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
         </script>  
     </body>
 </html>
