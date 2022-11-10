@@ -19,9 +19,7 @@ header{
     z-index:5;
     
 }
-ul {
-  /* margin:auto; */
-}
+
 .navbar-nav {
   position: absolute;
   left:150px;
