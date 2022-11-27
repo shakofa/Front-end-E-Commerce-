@@ -151,12 +151,13 @@ input{
 
 
 .btn-primary {
-    color: rgb(10, 9, 9);
+    color: rgb(11, 11, 11);
     padding-top: 5px;
     padding-bottom: 5px;
     border-color: #0783cb;
     border-radius: .3em;
-    
+    border: none;
+    background-color: rgb(219, 220, 216);
 }
 
 .btn-primary:hover {
@@ -230,15 +231,14 @@ video{
 .shop-item {
     margin: 30px;
     border: none;
-    box-shadow:0px 3px 0px #8da591;
+    box-shadow:0px 3px 0px #7ba5d5;
 }
 
 .shop-item-title {
     display: block;
     width: 100%;
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #333;
     margin-bottom: 15px;
 }
