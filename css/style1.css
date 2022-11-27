@@ -151,12 +151,12 @@ input{
 
 
 .btn-primary {
-    color: white;
-    
-    background-color: #039bf3;
-    border: none;
+    color: rgb(10, 9, 9);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #0783cb;
     border-radius: .3em;
-    font-weight: bold;
+    
 }
 
 .btn-primary:hover {
