@@ -67,7 +67,7 @@
   bottom: 0;
   
   transition: 200ms ease-in-out;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(242, 238, 234);
 
   pointer-events: none;
 }
@@ -85,7 +85,7 @@
 .bt {
   border: none;
   background-color: none;
-  color:rgb(96, 87, 87);
+  color:rgb(2, 76, 194);
   text-decoration: none;
 }
 

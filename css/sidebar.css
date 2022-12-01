@@ -19,15 +19,27 @@
     transition: 200ms ease-in-out; */
 
    height: 100%;
-  position: absolute; 
+  /* position: absolute; 
   z-index: 2; /* Stay on top */
-  top: 10;
+  /* top: 10;
   right: 0;
   background-color: white;
   overflow-x: hidden;
   padding-top: 60px; 
   transition: 0.5s;
-  border: 1px solid rgb(249, 246, 246);
+  border: 1px solid rgb(249, 246, 246);  */
+
+
+  
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 5;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s;
   }
 
    .cart.active {

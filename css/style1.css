@@ -266,6 +266,9 @@ video{
 
 
 /*cart part*/
+.cart{
+    padding-left: 14px;
+}
 .cart-header {
     font-weight: bold;
     font-size: 1em;
